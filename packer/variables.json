@@ -1,0 +1,20 @@
+{
+  "aws_access_key": "..."
+  "aws_secret_key": "...",
+  "aws_subnet_id": "subnet-...",
+  "aws_vpc_id": "vpc-...",
+  "aws_region": "us-west-1",
+  "aws_ssh_username": "ubuntu",
+  "aws_instance_type": "t2.large",
+  "aws_source_ami": "ami-...",
+  "aws_target_ami": "not_used",
+  "aws_associate_public_ip_address": "true",
+  "aws_enhanced_networking": "false",
+  "appversion": "",
+  "build_host": "",
+  "repository": "",
+  "package_type": "",
+  "packages": "",
+  "upgrade": ""
+}
+

@@ -1,0 +1,13 @@
+access_key = "..."
+secret_key = "..."
+environment = "staging"
+ami = "ami-"
+region = "us-west-1"
+instance_type = "t2.small"
+key_name = ".."
+nodes = "2"
+azs = "us-west-1a,us-west-1c"
+subnet_ids = "subnet-..."
+vpc_id = "vpc-..."
+certificatearn = "..."
+

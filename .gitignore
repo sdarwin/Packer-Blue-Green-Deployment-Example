@@ -1,0 +1,4 @@
+/bcks/
+/.terraform
+/terraform.tfstate*
+/test
