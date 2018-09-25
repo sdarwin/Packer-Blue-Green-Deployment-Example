@@ -93,7 +93,7 @@ if [ -f nodeploy.txt ] || [ "$nd" = "y" ]; then
   echo " "
   echo "Per request, skipping deploy."
   echo " "
-  exit 1
+  exit 0
 fi
  
 cd $startingdir
