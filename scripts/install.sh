@@ -16,3 +16,7 @@ apt install -y unzip
 unzip terraform_0.11.8_linux_amd64.zip
 cp terraform /usr/local/bin
 
+#AWS CLI
+apt-get update
+apt install awscli
+
