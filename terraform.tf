@@ -23,7 +23,7 @@ resource "null_resource" "launch_configuration_backup" {
   provisioner "local-exec" {
     command = <<EOT
       timestamp=$(date +%Y-%m-%d-%H-%M-%S)
-      AWS_ACCESS_KEY_ID=${var.access_key} AWS_SECRET_ACCESS_KEY=${var.secret_key} AWS_REGION=${var.region} /usr/bin/aws autoscaling create-launch-configuration --launch-configuration-name ${aws_launch_configuration.web.name}-BACKUPCOPY-${var.environment}-$timestamp \
+      AWS_ACCESS_KEY_ID=${var.access_key} AWS_SECRET_ACCESS_KEY=${var.secret_key} AWS_DEFAULT_REGION=${var.region} /usr/bin/aws autoscaling create-launch-configuration --launch-configuration-name ${aws_launch_configuration.web.name}-BACKUPCOPY-${var.environment}-$timestamp \
 --image-id ${aws_launch_configuration.web.image_id} \
 --key-name ${aws_launch_configuration.web.key_name} \
 --security-groups ${aws_security_group.web.id} \
