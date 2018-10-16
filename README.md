@@ -25,16 +25,19 @@ git add .
 git commit
 ```
 - Optionally, add github remotes, connecting /opt/github/blue-green to your github account.
-- The directory jenkins in this repo contains two jobs, jenkins/Bake and jenkins/Deploy. Copy these jobs into your Jenkins directory, for example:
+- The jenkins subdirectory in this repo contains multiple jobs. Copy these jobs into your Jenkins home directory, for example:
 ```
 cp -rp jenkins/Bake /var/lib/jenkins/jobs/
 cp -rp jenkins/Deploy /var/lib/jenkins/jobs/
+cp -rp jenkins/Pipeline /var/lib/jenkins/jobs/
 ```
 Reload Jenkins.
-These Jenkins jobs will need to be customized. It is probably easier from the Jenkins web console, than in the xml, although both are possible.
+These jobs will need to be customized. It is probably easier from the Jenkins web console, than in the xml, although both are possible.
 - Install the Jenkins SSH Agent Plugin
 - Create an SSH key in Credentials
 - Review all the settings in the jobs, from beginning to end, and customize as necessary.
+
+The Bake and Deploy jobs are standard Freestyle projects. The Pipeline job is a pipeline (formerly known as workflows). Either will work.
 
 ----
 
